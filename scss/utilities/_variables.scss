@@ -1,0 +1,25 @@
+// ======================================
+//  Variables
+// ======================================
+
+// ------------Colors--------------------
+$color-white                :#D2D2D2;
+$color-black                :#252525;
+$color-gray                 :#414141; 
+
+$color-primary              :#AF0404;
+$color-secondary            :#FF0000;
+
+// -----------Fonts----------------------
+$font-primary               :'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Verdana, sans-serif;
+
+
+//-----------Breakpoints-----------------
+$breakpoints: (
+    "mobileS"               : 320px,
+    "mobileM"               : 375px,
+    "mobileL"               : 425px,
+    "tablet"                : 768px,
+    "laptop"                : 1024px,
+    "desktop"               : 1440px,
+); 
