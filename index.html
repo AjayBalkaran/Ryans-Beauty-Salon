@@ -5,6 +5,9 @@
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <meta http-equiv="X-UA-Compatible" content="ie=edge">
         <title>Ryan's Beauty Salon</title>
+        <!-- Google Fonts -->
+        <link href="https://fonts.googleapis.com/css?family=Titillium+Web&display=swap" rel="stylesheet">
+
         <!-- CSS Stylesheet -->
         <link rel="stylesheet" href="css/styles.css">
     </head>
@@ -16,14 +19,20 @@
                     <h4>Ryan's</h4>
                 </div>
 
-               <ul class="nav-links">
-                   <li><a href="#">Home</a></li>
-                   <li><a href="#">Services</a></li>
-                   <li><a href="#">Locations</a></li>
-                   <li><a href="#">Gallery</a></li>
-                   <li><a href="#">Testimonials</a></li>
-                </ul>
-                <div class="burger">
+               <div class="nav-links">
+                   <!-- The close button for the nav Overlay -->
+                    <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+                    
+                    <div class="nav-content">
+                       <a href="#">Home</a>
+                       <a href="#">Services</a>
+                       <a href="#">Locations</a>
+                       <a href="#">Gallery</a>
+                       <a href="#">Testimonials</a>
+                    </div>
+               </div>
+
+                <div onclick="openNav()" class="burger">
                     <div class="line1"></div>
                     <div class="line2"></div>
                     <div class="line3"></div>
@@ -113,11 +122,13 @@
                         <span>Phone:416-741-1721</span><br>
                         Or
                     </p>
-
                     <button type="button">Book Now</button>
 
                 </div>
             </div>
         </main>
+
+        <!-- Javascript Files -->
+        <script src="javascript/app.js"></script>
     </body>
 </html>
