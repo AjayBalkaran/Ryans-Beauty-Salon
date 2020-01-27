@@ -3,12 +3,15 @@ nav {
     justify-content: space-around;
     align-items: center;
     min-height: 8vh;
-    height: 15%;
+    height: 15vh;
     background-color: $color-black;
     width: 100%;
     position: fixed;
     top: 0;
     left: 0;
+    @include mq("laptop") {
+        padding: 3%;
+     }
 }
 
 .logo {
@@ -16,6 +19,9 @@ nav {
     text-transform: uppercase;
     letter-spacing: 5px;
     font-size: 30px;
+    @include mq("laptop") {
+       width: 45%;
+    }
 }
 
 
@@ -25,4 +31,8 @@ nav {
     background-color: $color-white;
     margin: 5px;
     transition: all 0.5s ease;
+
+    @include mq("laptop") {
+        display: none;
+    }
 }
