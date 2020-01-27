@@ -9,6 +9,12 @@
     background-color: rgba(0,0,0, 0.9); /* Black w/opacity */
     overflow-x: hidden; /* Disable horizontal scroll */
     transition: 0.5s;
+    @include mq("laptop") {
+        height: auto;
+        width: auto;
+        position: initial;
+        background-color: $color-black;
+    }
 }
 
 .nav-content {
@@ -17,6 +23,14 @@
     width: 100%;
     text-align: center;
     margin-top: 30px;
+
+    @include mq("laptop") {
+        position: initial;
+        display: flex;
+        margin-top: 0;
+        justify-content: space-evenly;
+    }
+
 }
   
   /* The navigation links inside the overlay */
@@ -27,6 +41,11 @@
     text-transform: uppercase;
     color: $color-white;
     display: block;
+
+    @include mq("laptop") {
+        letter-spacing: 3px;
+        font-size: 15px;
+    }
 }
   
 /* Position the close button (top right corner) */
@@ -35,4 +54,8 @@
     top: 20px;
     right: 45px;
     font-size: 60px;
+
+    @include mq("laptop") {
+       display: none;
+    }
 }
