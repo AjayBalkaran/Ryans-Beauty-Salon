@@ -1,0 +1,28 @@
+nav {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    min-height: 8vh;
+    height: 15%;
+    background-color: $color-black;
+    width: 100%;
+    position: fixed;
+    top: 0;
+    left: 0;
+}
+
+.logo {
+    color: $color-primary;
+    text-transform: uppercase;
+    letter-spacing: 5px;
+    font-size: 30px;
+}
+
+
+.burger div {
+    width: 25px;
+    height: 3px;
+    background-color: $color-white;
+    margin: 5px;
+    transition: all 0.5s ease;
+}
