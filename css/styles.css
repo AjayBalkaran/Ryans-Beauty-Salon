@@ -6,7 +6,7 @@
 }
 
 main {
-  margin-top: 15%;
+  margin-top: 15vh;
 }
 
 /*! normalize.css v8.0.1 | MIT License | github.com/necolas/normalize.css */
@@ -368,12 +368,17 @@ nav {
   justify-content: space-around;
   align-items: center;
   min-height: 8vh;
-  height: 15%;
+  height: 15vh;
   background-color: #252525;
   width: 100%;
   position: fixed;
   top: 0;
   left: 0;
+}
+@media (min-width: 1024px) {
+  nav {
+    padding: 3%;
+  }
 }
 
 .logo {
@@ -382,6 +387,11 @@ nav {
   letter-spacing: 5px;
   font-size: 30px;
 }
+@media (min-width: 1024px) {
+  .logo {
+    width: 45%;
+  }
+}
 
 .burger div {
   width: 25px;
@@ -389,6 +399,11 @@ nav {
   background-color: #D2D2D2;
   margin: 5px;
   transition: all 0.5s ease;
+}
+@media (min-width: 1024px) {
+  .burger div {
+    display: none;
+  }
 }
 
 .nav-links {
@@ -406,6 +421,14 @@ nav {
   /* Disable horizontal scroll */
   transition: 0.5s;
 }
+@media (min-width: 1024px) {
+  .nav-links {
+    height: auto;
+    width: auto;
+    position: initial;
+    background-color: #252525;
+  }
+}
 
 .nav-content {
   position: relative;
@@ -413,6 +436,14 @@ nav {
   width: 100%;
   text-align: center;
   margin-top: 30px;
+}
+@media (min-width: 1024px) {
+  .nav-content {
+    position: initial;
+    display: flex;
+    margin-top: 0;
+    justify-content: space-evenly;
+  }
 }
 
 /* The navigation links inside the overlay */
@@ -424,6 +455,12 @@ nav {
   color: #D2D2D2;
   display: block;
 }
+@media (min-width: 1024px) {
+  .nav-links a {
+    letter-spacing: 3px;
+    font-size: 15px;
+  }
+}
 
 /* Position the close button (top right corner) */
 .nav-links .closebtn {
@@ -431,6 +468,11 @@ nav {
   top: 20px;
   right: 45px;
   font-size: 60px;
+}
+@media (min-width: 1024px) {
+  .nav-links .closebtn {
+    display: none;
+  }
 }
 
 /*# sourceMappingURL=styles.css.map */
