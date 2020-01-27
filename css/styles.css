@@ -352,8 +352,11 @@ body {
 }
 
 h1 {
-  color: #FF0000;
   text-transform: uppercase;
+}
+
+.wingdings {
+  font-family: wingdings;
 }
 
 /*# sourceMappingURL=styles.css.map */
