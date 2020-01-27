@@ -5,6 +5,10 @@
   box-sizing: border-box;
 }
 
+main {
+  margin-top: 15%;
+}
+
 /*! normalize.css v8.0.1 | MIT License | github.com/necolas/normalize.css */
 /* Document
    ========================================================================== */
@@ -348,7 +352,7 @@ template {
 /*              Typography                       */
 /* ============================================= */
 body {
-  font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande", "Lucida Sans Unicode", Verdana, sans-serif;
+  font-family: "Titillium Web", sans-serif;
 }
 
 h1 {
@@ -357,6 +361,76 @@ h1 {
 
 .wingdings {
   font-family: wingdings;
+}
+
+nav {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  min-height: 8vh;
+  height: 15%;
+  background-color: #252525;
+  width: 100%;
+  position: fixed;
+  top: 0;
+  left: 0;
+}
+
+.logo {
+  color: #FF0000;
+  text-transform: uppercase;
+  letter-spacing: 5px;
+  font-size: 30px;
+}
+
+.burger div {
+  width: 25px;
+  height: 3px;
+  background-color: #D2D2D2;
+  margin: 5px;
+  transition: all 0.5s ease;
+}
+
+.nav-links {
+  height: 0;
+  width: 100%;
+  position: fixed;
+  z-index: 100;
+  left: 0;
+  top: 0;
+  background-color: #252525;
+  /* Black fallback color */
+  background-color: rgba(0, 0, 0, 0.9);
+  /* Black w/opacity */
+  overflow-x: hidden;
+  /* Disable horizontal scroll */
+  transition: 0.5s;
+}
+
+.nav-content {
+  position: relative;
+  top: 25%;
+  width: 100%;
+  text-align: center;
+  margin-top: 30px;
+}
+
+/* The navigation links inside the overlay */
+.nav-links a {
+  padding: 8px;
+  text-decoration: none;
+  font-size: 36px;
+  text-transform: uppercase;
+  color: #D2D2D2;
+  display: block;
+}
+
+/* Position the close button (top right corner) */
+.nav-links .closebtn {
+  position: absolute;
+  top: 20px;
+  right: 45px;
+  font-size: 60px;
 }
 
 /*# sourceMappingURL=styles.css.map */
