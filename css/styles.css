@@ -408,6 +408,33 @@ h3 {
   }
 }
 
+#testimonials .wingdings {
+  font-size: 30px;
+}
+@media (min-width: 425px) {
+  #testimonials .wingdings {
+    font-size: 50px;
+  }
+}
+@media (min-width: 768px) {
+  #testimonials .wingdings {
+    font-size: 70px;
+  }
+}
+#testimonials .review-text {
+  font-size: 16px;
+}
+@media (min-width: 425px) {
+  #testimonials .review-text {
+    font-size: 20px;
+  }
+}
+@media (min-width: 768px) {
+  #testimonials .review-text {
+    font-size: 30px;
+  }
+}
+
 /* ============================================= */
 /*                    Header                     */
 /* ============================================= */
@@ -422,6 +449,7 @@ nav {
   position: fixed;
   top: 0;
   left: 0;
+  z-index: 100;
 }
 @media (min-width: 1024px) {
   nav {
@@ -716,6 +744,83 @@ nav {
 }
 #locations .container .hours-container .black {
   background-color: #252525;
+}
+
+/* ============================================= */
+/*             Testimonials Section              */
+/* ============================================= */
+#testimonials .title {
+  display: flex;
+  justify-content: center;
+  padding-top: 5%;
+}
+#testimonials .title h2 {
+  font-size: 30px;
+  color: #414141;
+}
+#testimonials .title .left {
+  margin-top: 30px;
+}
+#testimonials .container {
+  display: flex;
+  flex-flow: column wrap;
+  justify-content: center;
+  text-align: center;
+  color: #414141;
+}
+@media (min-width: 1024px) {
+  #testimonials .container {
+    background-image: url(/img/hero-testimonial.jpg);
+    height: 100vh;
+    width: 100vw;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+    color: #D2D2D2;
+  }
+}
+#testimonials .container .overlay-drk {
+  width: 100vw;
+  height: 100vh;
+  background: #000;
+  opacity: 0.5;
+  position: absolute;
+  z-index: 0;
+}
+#testimonials .container .review {
+  z-index: 1;
+}
+#testimonials .container .review-img {
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  z-index: 2;
+}
+#testimonials .container .review-img img {
+  border-radius: 50%;
+  width: 80px;
+  height: 80px;
+  margin-top: 20px;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
+@media (min-width: 768px) {
+  #testimonials .container .review-img img {
+    height: 150px;
+    width: 150px;
+  }
+}
+#testimonials .container p {
+  display: inline-block;
+  padding: 10px;
+  margin: 0;
+}
+#testimonials .container .wingdings:first-of-type {
+  margin-bottom: 16px;
+}
+#testimonials .container .wingdings:last-of-type {
+  transform: rotate(180deg);
 }
 
 /*# sourceMappingURL=styles.css.map */
