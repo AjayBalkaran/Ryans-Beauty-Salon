@@ -7,7 +7,9 @@
         <title>Ryan's Beauty Salon</title>
         <!-- Google Fonts -->
         <link href="https://fonts.googleapis.com/css?family=Titillium+Web&display=swap" rel="stylesheet">
-
+        <!-- slide CDN Stylesheet -->
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.9.0/slick.min.css">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.9.0/slick-theme.min.css">
         <!-- CSS Stylesheet -->
         <link rel="stylesheet" href="css/styles.css">
     </head>
@@ -41,12 +43,12 @@
         </header>
 
         <main>
-            <div id="home">
+            <section id="home">
                 <h1>Ryan's Beauty Salon</h1>
                 <div class="overlay-drk"></div>
-            </div>
+            </section>
 
-            <div id="services">
+            <section id="services">
                 <div class="title">
                     <img src="img/title-brush.png" alt="" class="right">
                     <h2>Our Services</h2>
@@ -78,9 +80,9 @@
                         </ul>
                     </div>
                 </div>
-            </div>
+            </section>
 
-            <div id="locations">
+            <section id="locations">
                 <div class="title">
                     <img src="img/title-brush.png" alt="" class="right">
                     <h2>Locations</h2>
@@ -122,9 +124,9 @@
                         </div>
                     </div>
                 </div>
-            </div>
+            </section>
 
-            <div id="gallery">
+            <section id="gallery">
                 <div class="title">
                     <img src="img/title-brush.png" alt="" class="right">
                     <h2>Gallery</h2>
@@ -132,35 +134,51 @@
                 </div>
               
                 <div class="img">This is where the gallery will go</div>
-            </div>
+            </section>
 
-            <div id="testimonials">
+            <section id="testimonials">
                 <div class="title">
                     <img src="img/title-brush.png" alt="" class="right">
                     <h2>Testimonials</h2>
                     <img src="img/title-brush.png" alt="" class="left">
                 </div>
 
-                <div class="container">
+                <div class="slideshow">
                     <div class="overlay-drk"></div>
-                    <div class="review">
-                        <div class="review-img">
-                            <img src="img/woman-wearing-black-eyeglasses-1239291.jpg" alt="Profile picture of Jenny Smith">
-                           <p>Jenny Smith</p>
+                    <div class="slick">
+                        <!-- slide -->
+                        <div class="review">
+                            <div class="review-img">
+                                <img src="img/woman-wearing-black-eyeglasses-1239291.jpg" alt="Profile picture of Jenny Smith">
+                            <p>Jenny Smith 2</p>
+                            </div>
+                            <div class="review-info">
+                                <p class="wingdings">"</p>
+                                <p class="review-text">lorem ipsum dolor sit amet, <br> 
+                                consectetur adipiscing elit.</p>
+                                <p class="wingdings">"</p>
+                            </div>
+                        </div>
+    
+                        <!-- Slide -->
+                        <div class="review">
+                            <div class="review-img">
+                                <img src="img/woman-wearing-black-eyeglasses-1239291.jpg" alt="Profile picture of Jenny Smith">
+                            <p>Jenny Smith 2</p>
+                            </div>
+                            <div class="review-info">
+                                <p class="wingdings">"</p>
+                                <p class="review-text">lorem ipsum dolor sit amet, <br> 
+                                consectetur adipiscing elit.</p>
+                                <p class="wingdings">"</p>
+                            </div>
                         </div>
                         
-                        <p class="wingdings">"</p>
-                        <p class="review-text">lorem ipsum dolor sit amet, <br> 
-                            consectetur adipiscing elit.</p>
-                        <p class="wingdings">"</p>
-                    </div>
-                    <div class="slideShowDot">
-                        <p>. . . .</p>
                     </div>
                 </div>
-            </div>
+            </section>
 
-            <div id="contact">
+            <section id="contact">
                 <h2>Contact</h2>
                 <div class="container">
                     <h3>Ready To Look Your Best?</h3>
@@ -171,9 +189,13 @@
                     <button type="button">Book Now</button>
 
                 </div>
-            </div>
+            </section>
         </main>
 
+        <!-- JQuery CDN -->
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+        <!-- Slick Min CDN -->
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.9.0/slick.min.js"></script>
         <!-- Javascript Files -->
         <script src="javascript/app.js"></script>
     </body>
