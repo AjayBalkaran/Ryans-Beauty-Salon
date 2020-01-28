@@ -17,10 +17,8 @@ nav {
 .logo {
     color: $color-primary;
     text-transform: uppercase;
-    letter-spacing: 5px;
-    font-size: 30px;
     @include mq("laptop") {
-       width: 45%;
+       width: 30%;
     }
 }
 
