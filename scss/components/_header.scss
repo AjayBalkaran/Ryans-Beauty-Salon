@@ -13,6 +13,7 @@ nav {
     position: fixed;
     top: 0;
     left: 0;
+    z-index: 100;
     @include mq("laptop") {
         padding: 3%;
         background-color: rgba($color: $color-black, $alpha: .9);
