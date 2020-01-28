@@ -19,7 +19,7 @@
 
 .nav-content {
     position: relative;
-    top: 25%;
+    top: 12%;
     width: 100%;
     text-align: center;
     margin-top: 30px;
@@ -35,16 +35,17 @@
   
   /* The navigation links inside the overlay */
 .nav-links a {
-    padding: 8px;
-    text-decoration: none;
-    font-size: 36px;
-    text-transform: uppercase;
-    color: $color-white;
+    padding: 4%;
     display: block;
+    @include mq("tablet") {
+        padding: 5%;
+    }
 
     @include mq("laptop") {
-        letter-spacing: 3px;
-        font-size: 15px;
+      padding: 10px;
+    }
+    @include mq("desktop") {
+        padding: 5%;
     }
 }
   
