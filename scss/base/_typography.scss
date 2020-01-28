@@ -42,3 +42,30 @@
       font-size: 15px;
     }
   }
+
+  #testimonials {
+    .wingdings {
+      font-size: 30px;
+
+      @include mq("mobileL") {
+        font-size: 50px;
+      }
+
+      @include mq("tablet") {
+        font-size: 70px;
+      }
+    }
+
+
+    .review-text {
+      font-size: 16px;
+
+      @include mq("mobileL") {
+        font-size: 20px;
+      }
+
+      @include mq("tablet") {
+        font-size: 30px;
+      }
+    }
+  }
