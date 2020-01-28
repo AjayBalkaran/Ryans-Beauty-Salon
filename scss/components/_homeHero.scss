@@ -10,4 +10,25 @@
     align-items: center;
     color: $color-white;
     text-align: center;
+
+    @include mq("laptop") {
+        background-image: url("/Img/hero-pic.jpg");
+        width: 100vw;
+        height: 100vh;
+        background-repeat: no-repeat;
+        background-size: cover;
+
+        .overlay-drk {
+            width: 100vw;
+            height: 100vh;
+            background: #000;
+            opacity: .4;
+            position: absolute;
+        }
+
+        h1 {
+            z-index: 1;
+            width: 50%;
+        }
+    }
 }
