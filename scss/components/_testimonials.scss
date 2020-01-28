@@ -1,0 +1,70 @@
+/* ============================================= */
+/*             Testimonials Section              */
+/* ============================================= */
+
+#testimonials {
+    .title {
+        @include title;
+    }
+
+    .container {
+        display: flex;
+        flex-flow: column wrap;
+        justify-content: center;
+        text-align: center;
+        color: $color-gray;
+
+        @include mq("laptop") {
+            background-image: url(/img/hero-testimonial.jpg);
+            height: 100vh;
+            width: 100vw;
+            background-repeat: no-repeat;
+            background-size: cover;
+            background-attachment: fixed;
+
+            color: $color-white;
+        }
+
+        @include overlay-drk {
+            z-index: 0;
+        }
+
+        .review {
+            z-index: 1;
+        }
+        .review-img {
+            display: flex;
+            flex-direction: column;
+            text-align: center;
+            z-index: 2;
+           
+            img {
+                border-radius: 50%;
+                width: 80px;
+                height: 80px;
+                margin-top: 20px;
+                display: block;
+                margin-left: auto;
+                margin-right: auto;
+                @include mq("tablet") {
+                    height: 150px;
+                    width: 150px;
+                  }
+            }
+        }
+        
+        p {
+            display: inline-block;
+            padding: 10px;
+            margin: 0;
+        }
+        .wingdings:first-of-type {
+            margin-bottom: 16px;
+        }
+
+        .wingdings:last-of-type {
+           transform: rotate(180deg);
+        }
+    }
+}
+
