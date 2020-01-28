@@ -56,7 +56,6 @@
       }
     }
 
-
     .review-text {
       font-size: 16px;
 
@@ -69,3 +68,28 @@
       }
     }
   }
+
+  // ---------------------------Contact-------------------------------
+  #contact {
+  p {
+    font-size: 18px;
+    line-height: 2.5;
+
+    @include mq('mobileL'){
+      font-size: 26px;
+      line-height: 1.8;
+    }
+  }
+
+  h3 {
+    @include mq('mobileL'){
+      font-size: 30px;
+    }
+  }
+
+  button {
+    @include mq('mobileL'){
+      font-size: 26px;
+    }
+  }
+}
