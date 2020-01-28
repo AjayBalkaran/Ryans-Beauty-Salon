@@ -25,3 +25,16 @@
     padding-top: 5%;
     @content;
 }
+
+// Darken Background with over lay 
+
+@mixin overlay-drk {
+       .overlay-drk {
+            width: 100vw;
+            height: 100vh;
+            background: #000;
+            opacity: .5;
+            position: absolute;
+            @content;
+        }
+}
