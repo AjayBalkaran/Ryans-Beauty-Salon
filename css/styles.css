@@ -625,4 +625,97 @@ nav {
   padding-bottom: 1.5em;
 }
 
+/* ============================================= */
+/*               Locations Section               */
+/* ============================================= */
+#locations .title {
+  display: flex;
+  justify-content: center;
+  padding-top: 5%;
+}
+#locations .title h2 {
+  font-size: 30px;
+  color: #414141;
+}
+#locations .title .left {
+  margin-top: 30px;
+}
+#locations .container {
+  padding: 1em;
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  justify-content: center;
+}
+@media (min-width: 1024px) {
+  #locations .container {
+    background-image: url(/img/locations-background.jpg);
+    height: 100vh;
+    width: 100vw;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+  }
+}
+#locations .container .location {
+  display: flex;
+  justify-content: center;
+  text-align: center;
+  color: #414141;
+  padding: 0 25px;
+}
+@media (min-width: 375px) {
+  #locations .container .location {
+    padding: 0;
+  }
+}
+#locations .container .location h3 {
+  background-color: rgba(238, 238, 238, 0.7);
+  width: fit-content;
+  padding: 0.4em;
+}
+#locations .container .hours-container {
+  display: flex;
+  flex-flow: wrap column;
+  text-align: center;
+  justify-content: center;
+  color: #D2D2D2;
+  padding: 0.5em;
+}
+@media (min-width: 768px) {
+  #locations .container .hours-container {
+    flex-direction: row;
+  }
+}
+#locations .container .hours-container div {
+  height: 6em;
+}
+@media (min-width: 768px) {
+  #locations .container .hours-container div {
+    width: 33%;
+  }
+}
+@media (min-width: 1024px) {
+  #locations .container .hours-container div {
+    width: 10%;
+    margin: 1em;
+  }
+}
+@media (min-width: 768px) {
+  #locations .container .hours-container div:last-of-type {
+    width: 99%;
+  }
+}
+@media (min-width: 1024px) {
+  #locations .container .hours-container div:last-of-type {
+    width: 10%;
+  }
+}
+#locations .container .hours-container .red {
+  background-color: #AF0404;
+}
+#locations .container .hours-container .black {
+  background-color: #252525;
+}
+
 /*# sourceMappingURL=styles.css.map */
