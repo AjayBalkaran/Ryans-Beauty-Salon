@@ -435,6 +435,27 @@ h3 {
   }
 }
 
+#contact p {
+  font-size: 18px;
+  line-height: 2.5;
+}
+@media (min-width: 425px) {
+  #contact p {
+    font-size: 26px;
+    line-height: 1.8;
+  }
+}
+@media (min-width: 425px) {
+  #contact h3 {
+    font-size: 30px;
+  }
+}
+@media (min-width: 425px) {
+  #contact button {
+    font-size: 26px;
+  }
+}
+
 /* ============================================= */
 /*                    Header                     */
 /* ============================================= */
@@ -821,6 +842,58 @@ nav {
 }
 #testimonials .container .wingdings:last-of-type {
   transform: rotate(180deg);
+}
+
+/* ============================================= */
+/*                Contact Section                */
+/* ============================================= */
+#contact {
+  background-color: #D2D2D2;
+  padding-bottom: 3em;
+  color: #414141;
+}
+#contact .title {
+  display: flex;
+  justify-content: center;
+  padding-top: 5%;
+}
+#contact .title h2 {
+  font-size: 30px;
+  color: #414141;
+}
+#contact .title .left {
+  margin-top: 30px;
+}
+#contact .container {
+  display: flex;
+  flex-flow: column wrap;
+  justify-content: center;
+  text-align: center;
+}
+#contact .container p {
+  margin: 0;
+}
+#contact .container span {
+  color: #FF0000;
+}
+#contact .container button {
+  width: 80%;
+  height: 50px;
+  max-width: 300px;
+  margin-left: auto;
+  margin-right: auto;
+  background-color: #414141;
+  color: #D2D2D2;
+}
+@media (min-width: 425px) {
+  #contact .container button {
+    height: 80px;
+  }
+}
+@media (min-width: 1024px) {
+  #contact .container button {
+    width: 55%;
+  }
 }
 
 /*# sourceMappingURL=styles.css.map */
