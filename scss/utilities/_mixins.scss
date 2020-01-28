@@ -7,3 +7,21 @@
         @content;
     }
 }
+
+// Title formating
+
+@mixin title {
+    display: flex;
+    justify-content: center;
+
+    h2 {
+        font-size: 30px;
+        color: $color-gray;
+    }
+
+    .left {
+        margin-top: 30px;
+    }
+    padding-top: 5%;
+    @content;
+}
