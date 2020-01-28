@@ -412,7 +412,7 @@ nav {
 }
 @media (min-width: 1024px) {
   .logo {
-    width: 30%;
+    width: 45%;
   }
 }
 
@@ -449,7 +449,7 @@ nav {
     height: auto;
     width: auto;
     position: initial;
-    background-color: #252525;
+    background-color: initial;
   }
 }
 
@@ -514,6 +514,26 @@ nav {
   align-items: center;
   color: #D2D2D2;
   text-align: center;
+}
+@media (min-width: 1024px) {
+  #home {
+    background-image: url("/Img/hero-pic.jpg");
+    width: 100vw;
+    height: 100vh;
+    background-repeat: no-repeat;
+    background-size: cover;
+  }
+  #home .overlay-drk {
+    width: 100vw;
+    height: 100vh;
+    background: #000;
+    opacity: 0.4;
+    position: absolute;
+  }
+  #home h1 {
+    z-index: 1;
+    width: 50%;
+  }
 }
 
 /*# sourceMappingURL=styles.css.map */
