@@ -1,0 +1,44 @@
+/* ============================================= */
+/*                Contact Section                */
+/* ============================================= */
+
+#contact {
+    background-color: $color-white;
+    padding-bottom: 3em;
+    color: $color-gray;
+    .title {
+        @include title;
+    }
+
+    .container {
+        display: flex;
+        flex-flow: column wrap;
+        justify-content: center;
+        text-align: center;
+
+        p {
+            margin: 0;
+        }
+        span {
+            color: $color-primary;
+        }
+
+        button {
+            width: 80%;
+            height: 50px;
+            max-width: 300px;
+           margin-left: auto;
+           margin-right: auto;
+           background-color: $color-gray;
+           color: $color-white;
+
+           @include mq('mobileL'){
+            height: 80px;
+            }
+
+            @include mq("laptop") {
+                width: 55%;
+            }
+        }
+    }
+}
