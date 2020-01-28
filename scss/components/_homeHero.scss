@@ -12,7 +12,7 @@
     text-align: center;
 
     @include mq("laptop") {
-        background-image: url("/Img/hero-pic.jpg");
+        background-image: url("/img/hero-pic.jpg");
         width: 100vw;
         height: 100vh;
         background-repeat: no-repeat;
