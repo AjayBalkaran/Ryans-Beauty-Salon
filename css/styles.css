@@ -8,6 +8,11 @@
 main {
   margin-top: 15vh;
 }
+@media (min-width: 1024px) {
+  main {
+    margin-top: 0;
+  }
+}
 
 img {
   width: 50px;
@@ -375,6 +380,12 @@ h1 {
   font-family: wingdings;
 }
 
+@media (min-width: 1024px) {
+  #home h1 {
+    letter-spacing: 22px;
+  }
+}
+
 .nav-links a {
   text-decoration: none;
   font-size: 36px;
@@ -403,6 +414,7 @@ nav {
 @media (min-width: 1024px) {
   nav {
     padding: 3%;
+    background-color: rgba(37, 37, 37, 0.5);
   }
 }
 
@@ -517,7 +529,7 @@ nav {
 }
 @media (min-width: 1024px) {
   #home {
-    background-image: url("/Img/hero-pic.jpg");
+    background-image: url("/Img/photo-of-hairstyle-3065207.jpg");
     width: 100vw;
     height: 100vh;
     background-repeat: no-repeat;
@@ -527,12 +539,11 @@ nav {
     width: 100vw;
     height: 100vh;
     background: #000;
-    opacity: 0.4;
+    opacity: 0.5;
     position: absolute;
   }
   #home h1 {
     z-index: 1;
-    width: 50%;
   }
 }
 
