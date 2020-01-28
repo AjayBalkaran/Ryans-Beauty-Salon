@@ -1,0 +1,91 @@
+/* ============================================= */
+/*               Locations Section               */
+/* ============================================= */
+
+#locations {
+    .title {
+        @include title;
+    }
+    
+    .container {
+        padding: 1em;
+        display: flex;
+        flex-direction: column;
+        text-align: center;
+        justify-content: center;
+
+
+        @include mq("laptop"){
+            background-image: url(/img/locations-background.jpg);
+            height: 100vh;
+            width: 100vw;
+            background-repeat: no-repeat;
+            background-size: cover;
+            background-attachment: fixed;
+        }
+        
+        .location {
+            display: flex;
+            justify-content: center;
+            text-align: center;
+            color: $color-gray;
+            padding: 0 25px;
+            @include mq("mobileM") {
+                padding: 0;
+            }
+
+            h3 {
+                background-color: rgba($color: #eee, $alpha: .7);
+                width: fit-content;
+                padding: .4em;
+            }
+        }
+
+
+        .hours-container {
+            display: flex;
+            flex-flow: wrap column;
+            text-align: center;
+            justify-content: center;
+            color: $color-white;
+            padding: .5em;
+
+            @include mq("tablet") {
+                flex-direction: row;
+            }
+
+            div {
+                height: 6em;
+
+                @include mq("tablet") {
+                    width: 33%;
+                }
+                @include mq("laptop") {
+                    width: 10%;
+                    margin: 1em;
+                }
+
+            }
+
+            div:last-of-type {
+                @include mq("tablet") {
+                    width: 99%;
+                }
+                @include mq("laptop") {
+                    width: 10%;
+                }
+
+            }
+
+            .red {
+                background-color: $color-secondary;
+            }
+
+            .black {
+                background-color: $color-black;
+            }
+        }
+    }
+
+}
+
