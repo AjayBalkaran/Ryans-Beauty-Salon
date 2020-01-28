@@ -1,3 +1,7 @@
+/* ============================================= */
+/*                    Header                     */
+/* ============================================= */
+
 nav {
     display: flex;
     justify-content: space-around;
@@ -11,6 +15,7 @@ nav {
     left: 0;
     @include mq("laptop") {
         padding: 3%;
+        background-color: rgba($color: $color-black, $alpha: .9);
      }
 }
 
