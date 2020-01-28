@@ -8,6 +8,10 @@
 
 main {
     margin-top: 15vh;
+
+    @include mq("laptop"){
+        margin-top: 0;
+    }
 }
 
 img {
