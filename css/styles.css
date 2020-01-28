@@ -399,6 +399,9 @@ h1 {
   }
 }
 
+/* ============================================= */
+/*                    Header                     */
+/* ============================================= */
 nav {
   display: flex;
   justify-content: space-around;
@@ -414,7 +417,7 @@ nav {
 @media (min-width: 1024px) {
   nav {
     padding: 3%;
-    background-color: rgba(37, 37, 37, 0.5);
+    background-color: rgba(37, 37, 37, 0.9);
   }
 }
 
@@ -441,6 +444,9 @@ nav {
   }
 }
 
+/* ============================================= */
+/*                      Nav                      */
+/* ============================================= */
 .nav-links {
   height: 0;
   width: 100%;
@@ -529,7 +535,7 @@ nav {
 }
 @media (min-width: 1024px) {
   #home {
-    background-image: url("/Img/photo-of-hairstyle-3065207.jpg");
+    background-image: url("/Img/hero-pic.jpg");
     width: 100vw;
     height: 100vh;
     background-repeat: no-repeat;
