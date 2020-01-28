@@ -5,6 +5,10 @@
   box-sizing: border-box;
 }
 
+body {
+  background-color: #eee;
+}
+
 main {
   margin-top: 15vh;
 }
@@ -376,6 +380,11 @@ h1 {
   }
 }
 
+h3 {
+  font-size: 20px;
+  letter-spacing: 5px;
+}
+
 .wingdings {
   font-family: wingdings;
 }
@@ -535,7 +544,7 @@ nav {
 }
 @media (min-width: 1024px) {
   #home {
-    background-image: url("/Img/hero-pic.jpg");
+    background-image: url("/img/hero-pic.jpg");
     width: 100vw;
     height: 100vh;
     background-repeat: no-repeat;
@@ -551,6 +560,69 @@ nav {
   #home h1 {
     z-index: 1;
   }
+}
+
+/* ============================================= */
+/*                Image styles                   */
+/* ============================================= */
+.title .right {
+  transform: rotate(180deg);
+}
+
+/* ============================================= */
+/*                Services Section               */
+/* ============================================= */
+#services {
+  background-color: #D2D2D2;
+}
+#services .title {
+  display: flex;
+  justify-content: center;
+  padding-top: 5%;
+}
+#services .title h2 {
+  font-size: 30px;
+  color: #414141;
+}
+#services .title .left {
+  margin-top: 30px;
+}
+#services .container {
+  background-color: #D2D2D2;
+  text-align: center;
+  justify-content: center;
+  padding-bottom: 2em;
+}
+@media (min-width: 768px) {
+  #services .container {
+    display: flex;
+    flex-wrap: wrap;
+  }
+}
+#services .container .icon {
+  font-size: 2em;
+}
+@media (min-width: 768px) {
+  #services .container .icon {
+    padding-top: 2em;
+    width: 10%;
+  }
+}
+@media (min-width: 768px) {
+  #services .services-list {
+    width: 45%;
+  }
+}
+#services .services-list h3 {
+  color: #FF0000;
+}
+#services .services-list ul {
+  list-style: none;
+  padding: 0;
+}
+#services .services-list li {
+  color: #414141;
+  padding-bottom: 1.5em;
 }
 
 /*# sourceMappingURL=styles.css.map */
