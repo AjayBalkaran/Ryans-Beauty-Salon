@@ -1,3 +1,7 @@
+$(document).ready(() => {
+  $('.chocolat-parent').Chocolat();
+});
+
 /* Open */
 function openNav() {
     document.querySelector(".nav-links").style.height = "100%";
