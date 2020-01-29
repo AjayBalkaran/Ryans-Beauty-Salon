@@ -1,0 +1,52 @@
+  /* ============================================= */
+  /*                   Gallery                     */
+  /* ============================================= */
+
+#gallery {
+    background-color: $color-black;
+    padding: 1.5em;
+
+    @include mq('laptop') {
+       padding-bottom: 4em;
+    }
+
+    .title {
+        @include title;
+        h2 {
+        color: $color-white;
+        }
+    }
+
+    .chocolat-parent {
+        display: flex;
+        justify-content: center;
+        text-align: center;
+        flex-flow: row wrap;
+
+        a {
+            width: 30%;
+            margin: 1em;
+
+            @include mq('laptop') {
+                width: 20%;
+            }
+
+        }
+        img {
+            height: 100px;
+            width: 100px;
+
+            @include mq('tablet') {
+                height: 150px;
+                width: 150px;
+            }
+
+            @include mq('desktop') {
+                height: 200px;
+                width: 200px;
+            }
+        }
+    }
+
+}
+
