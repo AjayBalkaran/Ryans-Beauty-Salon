@@ -1053,15 +1053,16 @@ nav {
 #testimonials .title .left {
   margin-top: 30px;
 }
-#testimonials .container {
-  display: flex;
-  flex-flow: column wrap;
-  justify-content: center;
-  text-align: center;
-  color: #414141;
+#testimonials .slideshow {
+  height: 65vh;
+}
+@media (min-width: 425px) {
+  #testimonials .slideshow {
+    height: 70vh;
+  }
 }
 @media (min-width: 1024px) {
-  #testimonials .container {
+  #testimonials .slideshow {
     background-image: url(/img/hero-testimonial.jpg);
     height: 100vh;
     width: 100vw;
@@ -1071,48 +1072,72 @@ nav {
     color: #D2D2D2;
   }
 }
-#testimonials .container .overlay-drk {
-  width: 100vw;
-  height: 100vh;
-  background: #000;
-  opacity: 0.5;
-  position: absolute;
-  z-index: 0;
+@media (min-width: 1024px) {
+  #testimonials .slideshow .overlay-drk {
+    width: 100vw;
+    height: 100vh;
+    background: #000;
+    opacity: 0.5;
+    position: absolute;
+  }
 }
-#testimonials .container .review {
-  z-index: 1;
+#testimonials .slideshow .slick {
+  position: relative;
+  top: 50%;
+  transform: translateY(-50%);
 }
-#testimonials .container .review-img {
+#testimonials .slideshow .review {
   display: flex;
-  flex-direction: column;
+  justify-content: center;
   text-align: center;
-  z-index: 2;
+  margin: 1em 0;
 }
-#testimonials .container .review-img img {
+#testimonials .slideshow .review .review-img img {
   border-radius: 50%;
   width: 80px;
   height: 80px;
-  margin-top: 20px;
   display: block;
   margin-left: auto;
   margin-right: auto;
 }
 @media (min-width: 768px) {
-  #testimonials .container .review-img img {
-    height: 150px;
-    width: 150px;
+  #testimonials .slideshow .review .review-img img {
+    width: 100px;
+    height: 100px;
   }
 }
-#testimonials .container p {
-  display: inline-block;
+#testimonials .slideshow .review .review-img p {
+  text-transform: uppercase;
+}
+@media (min-width: 425px) {
+  #testimonials .slideshow .review .review-img p {
+    font-size: 20px;
+  }
+}
+@media (min-width: 768px) {
+  #testimonials .slideshow .review .review-img p {
+    font-size: 30px;
+  }
+}
+#testimonials .slideshow .review-info {
+  display: flex;
+  justify-content: center;
+  text-align: center;
+}
+#testimonials .slideshow .review-info .review-text {
   padding: 10px;
-  margin: 0;
 }
-#testimonials .container .wingdings:first-of-type {
-  margin-bottom: 16px;
-}
-#testimonials .container .wingdings:last-of-type {
+#testimonials .slideshow .review-info .wingdings:last-of-type {
   transform: rotate(180deg);
+}
+#testimonials .slick-dots li button:before {
+  font-size: 15px;
+  color: #252525;
+}
+@media (min-width: 1024px) {
+  #testimonials .slick-dots li button:before {
+    color: #D2D2D2;
+  }
 }
 
 /* ============================================= */
