@@ -25,6 +25,10 @@
             width: 30%;
             margin: 1em;
 
+            @include mq('tablet') {
+                width: 25%;
+            }
+
             @include mq('laptop') {
                 width: 20%;
             }
