@@ -904,7 +904,7 @@ nav {
 @media (min-width: 1024px) {
   #locations .container {
     background-image: url(/img/locations-background.jpg);
-    height: 100vh;
+    height: 65vh;
     width: 100vw;
     background-repeat: no-repeat;
     background-size: cover;
@@ -997,6 +997,11 @@ nav {
   width: 30%;
   margin: 1em;
 }
+@media (min-width: 768px) {
+  #gallery .chocolat-parent a {
+    width: 25%;
+  }
+}
 @media (min-width: 1024px) {
   #gallery .chocolat-parent a {
     width: 20%;
@@ -1022,6 +1027,9 @@ nav {
 /* ============================================= */
 /*             Testimonials Section              */
 /* ============================================= */
+#testimonials {
+  color: #D2D2D2;
+}
 #testimonials .title {
   display: flex;
   justify-content: center;
@@ -1036,7 +1044,7 @@ nav {
   margin-top: 30px;
 }
 #testimonials .slideshow {
-  background-color: #D2D2D2;
+  background-color: #414141;
   padding: 2.5em 0;
 }
 @media (min-width: 1024px) {
@@ -1047,7 +1055,6 @@ nav {
     background-repeat: no-repeat;
     background-size: cover;
     background-attachment: fixed;
-    color: #D2D2D2;
     padding: 0;
   }
 }
@@ -1072,19 +1079,24 @@ nav {
   }
 }
 #testimonials .slideshow .slick-prev {
-  left: 10%;
+  left: 5%;
 }
 #testimonials .slideshow .slick-next {
-  right: 10%;
+  right: 5%;
+}
+#testimonials .slideshow .slick-next, #testimonials .slideshow .slick-prev {
+  top: 20%;
 }
 #testimonials .slideshow .slick-prev::before, #testimonials .slideshow .slick-next::before {
-  color: #414141;
+  color: #D2D2D2;
   font-size: 30px;
+  display: none;
 }
 @media (min-width: 1024px) {
   #testimonials .slideshow .slick-prev::before, #testimonials .slideshow .slick-next::before {
     color: #D2D2D2;
     font-size: 40px;
+    display: block;
   }
 }
 #testimonials .slideshow .slick-dots {
@@ -1122,6 +1134,7 @@ nav {
 }
 #testimonials .slideshow .review .review-img p {
   text-transform: uppercase;
+  font-size: 20px;
 }
 @media (min-width: 425px) {
   #testimonials .slideshow .review .review-img p {
@@ -1146,12 +1159,7 @@ nav {
 }
 #testimonials .slick-dots li button:before {
   font-size: 15px;
-  color: #252525;
-}
-@media (min-width: 1024px) {
-  #testimonials .slick-dots li button:before {
-    color: #D2D2D2;
-  }
+  color: #D2D2D2;
 }
 
 /* ============================================= */
