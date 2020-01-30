@@ -3,7 +3,7 @@
 /* ============================================= */
 
 #services {
-    background-color: $color-white;
+    
     
     // title 
     .title {
@@ -14,7 +14,7 @@
         background-color: $color-white;
         text-align: center;
         justify-content: center;
-        padding-bottom: 2em;
+        padding: 2em 0;
         
         @include mq("tablet") {
             display: flex;

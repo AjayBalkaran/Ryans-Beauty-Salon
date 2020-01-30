@@ -8,6 +8,7 @@
     }
     
     .container {
+        background-color: $color-white;
         padding: 1em;
         display: flex;
         flex-direction: column;
@@ -35,44 +36,36 @@
             }
 
             h3 {
-                background-color: rgba($color: #eee, $alpha: .7);
                 width: fit-content;
                 padding: .4em;
+
+                @include mq('laptop'){
+                    background-color: rgba($color: #eee, $alpha: .7);
+                }
             }
         }
 
 
         .hours-container {
             display: flex;
-            flex-flow: wrap column;
+            flex-flow: wrap row;
             text-align: center;
             justify-content: center;
             color: $color-white;
             padding: .5em;
 
-            @include mq("tablet") {
-                flex-direction: row;
-            }
-
             div {
                 height: 6em;
+                height: 6em;
+                width: 45%;
+                margin: .2em;
 
                 @include mq("tablet") {
                     width: 33%;
                 }
                 @include mq("laptop") {
                     width: 10%;
-                    margin: 1em;
-                }
-
-            }
-
-            div:last-of-type {
-                @include mq("tablet") {
-                    width: 99%;
-                }
-                @include mq("laptop") {
-                    width: 10%;
+                    margin: .7em;
                 }
 
             }

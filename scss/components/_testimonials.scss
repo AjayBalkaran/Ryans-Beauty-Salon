@@ -9,10 +9,12 @@
 
 
     .slideshow {
-        height: 65vh;
+        // height: 65vh;
+        background-color: $color-white;
+        padding: 2.5em 0;
 
         @include mq("mobileL"){
-            height: 70vh;
+            // height: 70vh;
         }
 
         @include mq("laptop") {
@@ -23,6 +25,7 @@
             background-size: cover;
             background-attachment: fixed; 
             color: $color-white; 
+            padding:0;
         }
        
       
@@ -32,9 +35,49 @@
         }
        
         .slick {
-            position: relative;
-            top: 50%;
-            transform: translateY(-50%);
+            // position: relative;
+            // top: 50%;
+            // transform: translateY(-50%);
+            @include mq("laptop") {
+                position: relative;
+                top: 25%;
+                // transform: translateY(-50%);
+            }
+            // try
+            width: 90%;
+            margin-left: auto;
+            margin-right: auto;
+
+            &-prev {
+                left: 10%;
+            }
+
+            &-next {
+                right: 10%;
+            }
+
+            &-prev::before,
+            &-next::before {
+                color: $color-gray;
+                font-size: 30px;
+
+                @include mq("laptop") {
+                    color: $color-white;
+                    font-size: 40px;
+                }
+            }
+            
+            &-dots {
+                bottom: 2%;
+
+                @include mq("tablet") {
+                    bottom: 5%;
+                }
+
+                @include mq("laptop") {
+                    bottom: 10%;
+                }
+            }
         }
         .review {
             display: flex;

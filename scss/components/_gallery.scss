@@ -3,25 +3,23 @@
   /* ============================================= */
 
 #gallery {
-    background-color: $color-black;
-    padding: 1.5em;
-
-    @include mq('laptop') {
-       padding-bottom: 4em;
-    }
+   
 
     .title {
         @include title;
-        h2 {
-        color: $color-white;
-        }
     }
 
     .chocolat-parent {
+        background-color: $color-black;
         display: flex;
         justify-content: center;
         text-align: center;
         flex-flow: row wrap;
+        padding: 1.5em;
+
+        @include mq('laptop') {
+            padding-bottom: 2em 0;
+         }
 
         a {
             width: 30%;

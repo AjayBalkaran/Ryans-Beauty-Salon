@@ -3,19 +3,17 @@
 /* ============================================= */
 
 #contact {
-    background-color: $color-white;
-    padding-bottom: 3em;
-    color: $color-gray;
     .title {
         @include title;
     }
 
     .container {
+        background-color: $color-white;
         display: flex;
         flex-flow: column wrap;
         justify-content: center;
         text-align: center;
-
+        padding: 2.5em 0 4.5em;
         p {
             margin: 0;
         }
@@ -42,3 +40,4 @@
         }
     }
 }
+
