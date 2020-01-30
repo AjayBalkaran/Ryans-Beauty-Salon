@@ -6,11 +6,11 @@
     .title {
         @include title;
     }
-
+    color: $color-white;
 
     .slideshow {
         // height: 65vh;
-        background-color: $color-white;
+        background-color: $color-gray;
         padding: 2.5em 0;
 
         @include mq("mobileL"){
@@ -24,7 +24,7 @@
             background-repeat: no-repeat;
             background-size: cover;
             background-attachment: fixed; 
-            color: $color-white; 
+            
             padding:0;
         }
        
@@ -49,21 +49,28 @@
             margin-right: auto;
 
             &-prev {
-                left: 10%;
+                left: 5%;
             }
 
             &-next {
-                right: 10%;
+                right: 5%;
+            }
+
+            &-next,
+            &-prev {
+                top: 20%;
             }
 
             &-prev::before,
             &-next::before {
-                color: $color-gray;
+                color: $color-white;
                 font-size: 30px;
+                display: none;
 
                 @include mq("laptop") {
                     color: $color-white;
                     font-size: 40px;
+                    display: block;
                 }
             }
             
@@ -102,7 +109,7 @@
 
                 p {
                     text-transform: uppercase;
-                  
+                    font-size: 20px;
                     @include mq("mobileL"){
                         font-size: 20px;
                     }
@@ -131,10 +138,7 @@
 
     .slick-dots li button:before {
         font-size: 15px;
-        color: $color-black;
-        @include mq("laptop") {
-            color: $color-white;
-        }
+        color: $color-white;
     }
 }
 
