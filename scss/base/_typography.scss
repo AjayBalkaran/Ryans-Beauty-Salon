@@ -47,6 +47,7 @@
   #testimonials {
     .wingdings {
       font-size: 30px;
+      color: $color-secondary;
 
       @include mq("mobileL") {
         font-size: 50px;
