@@ -23,8 +23,14 @@ nav {
 .logo {
     color: $color-primary;
     text-transform: uppercase;
+    display: flex;
+    justify-content: space-between;
     @include mq("laptop") {
        width: 45%;
+       padding-left: 5%;
+    }
+    img {
+        width: 150px;
     }
 }
 
